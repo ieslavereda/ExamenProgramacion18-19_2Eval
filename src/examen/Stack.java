@@ -6,14 +6,15 @@ package examen;
 import java.io.Serializable;
 
 /**
+ * Solution of exercise 1
  * @author joaalsai
  *
  */
 public class Stack<E> implements Serializable {
 
 	/**
-		 * 
-		 */
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
 	private Nodo<E> peak;
 

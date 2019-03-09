@@ -1,7 +1,12 @@
 package examen;
 
 import java.io.Serializable;
-
+/**
+ * Part of the solution of exercise 1 
+ * @author joaalsai
+ *
+ * @param <E>	Element to store in the stack
+ */
 public class Nodo<E> implements Serializable{
 	
 	/**

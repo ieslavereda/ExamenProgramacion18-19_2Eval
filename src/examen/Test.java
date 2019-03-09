@@ -8,9 +8,17 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-
+/**
+ * Test class to check the Student and Stack classes, and store the stack into a file.
+ * @author joaalsai
+ *
+ */
 public class Test {
 
+	/**
+	 * Solution of exercise number 5
+	 * @param args	Not used
+	 */
 	public static void main(String[] args) {
 		
 		File f = new File("test");
@@ -28,7 +36,7 @@ public class Test {
 
 		Stack<Student> p2 = new Stack<Student>();
 
-		invertirPila(p1, p2);
+		invertStack(p1, p2);
 
 		System.out.println("Target stack");
 		System.out.println(p2.toString());
@@ -42,7 +50,12 @@ public class Test {
 
 	}
 
-	public static void invertirPila(Stack<Student> p1, Stack<Student> p2) {
+	/**
+	 * Solution of exercise number 3
+	 * @param p1	Source stack
+	 * @param p2	Target stack
+	 */
+	public static void invertStack(Stack<Student> p1, Stack<Student> p2) {
 		Student aux;
 
 		while ((aux = p1.pop()) != null) {
@@ -50,6 +63,11 @@ public class Test {
 		}
 	}
 
+	/**
+	 * Solution of exercise number 4
+	 * @param p		Stack of students to store
+	 * @param f		File where to store the stack
+	 */
 	public static void store(Stack<Student> p, File f) {
 
 		ObjectOutputStream oos = null;
@@ -73,8 +91,10 @@ public class Test {
 		}
 	}
 
-	/*
-	 * This method is only to check the store method
+	/**
+	 * This method it's only to check the store method
+	 * @param f 	file where is stored the stack
+	 * @return		the stack stored
 	 */
 	@SuppressWarnings("unchecked")
 	public static Stack<Student> load(File f) {

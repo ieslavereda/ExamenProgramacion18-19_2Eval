@@ -2,6 +2,11 @@ package examen;
 
 import java.io.Serializable;
 
+/** 
+ * Abstract class to be used in the solution of exercise 2
+ * @author joaalsai
+ *
+ */
 public abstract class Person implements Serializable {
 	
 	/**

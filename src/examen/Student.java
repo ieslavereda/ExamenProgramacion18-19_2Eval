@@ -1,7 +1,11 @@
 package examen;
 
 import java.io.Serializable;
-
+/**
+ * Solution of exercise 2
+ * @author joaalsai
+ *
+ */
 public class Student extends Person implements Serializable{
 
 	/**
