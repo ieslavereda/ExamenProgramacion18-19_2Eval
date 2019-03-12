@@ -23,6 +23,12 @@ public class Stack<E> implements Serializable {
 		peak = null;
 	}
 
+	/**
+	 * Place the element on top of the stack
+	 * 
+	 * @param q
+	 *            the element to push
+	 */
 	public void push(E q) {
 		Nodo<E> nodo = new Nodo<E>(q);
 
@@ -35,6 +41,11 @@ public class Stack<E> implements Serializable {
 		}
 	}
 
+	/**
+	 * Get the element on top of the stack
+	 * 
+	 * @return the element
+	 */
 	public E pop() {
 
 		E aux = null;
